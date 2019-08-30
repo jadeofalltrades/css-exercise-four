@@ -5,60 +5,65 @@
 body {
   background-color: #dadada;
   font-size: 10px;
-  display: inline-flex;
+  display: inline-block;
 }
 
 h1 {
   font-size: 2em;
+  margin:2%;
+  padding: 2%;
 }
 
 div {
-  background-color: #dadada;
   float: left;
   width:100%;
 }
 
 .container {
-  position:relative;
+  position:absolute;
   text-align: center;
   width: 100%;
   height:auto;
 }
 
+
 .baku {
-  background-image: url(images/baku.jpg);
+  background-image: url('../images/baku.jpg');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   width: 100%;
 }
 
 .london {
-  background-image: url(images/london.png);
+  background-image: url('../images/london.png');
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
   width: 100%;
 }
 
 .madrid {
-  background-image: url(images/madrid.jpg);
+  background-image: url('../images/madrid.jpg');
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
   width: 100%;
 }
+
 .rome {
-  background-image: url(images/rome.jpg);
+  background-image: url('../images/rome.jpg');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   width: 100%;
 }
 
 .preview {
-  height: auto;
+  height: 250px;
+  text-align: left;
+  margin:1%;
 }
 
 /* code for tablet size two-column */
 @media screen and (min-width: 575px){
-  div {
+  .preview {
     margin: 1%;
     width: 48%;
   }
@@ -66,8 +71,8 @@ div {
 
 /* code for laptop four-column */
 @media screen and (min-width: 991px){
-  div {
-    margin: 0%;
-    width: 25%;
+  .preview {
+    margin: 0.2%;
+    width: 24.5%;
   }
 }
