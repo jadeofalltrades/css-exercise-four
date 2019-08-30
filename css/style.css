@@ -5,67 +5,69 @@
 body {
   background-color: #dadada;
   font-size: 10px;
-  display: block;
+  display: inline-flex;
 }
 
 h1 {
   font-size: 2em;
 }
 
-img {
-  max-width: 100%;
-  max-height: 100%;
-  width: auto;
-  height: auto;
-}
-
 div {
   background-color: #dadada;
   float: left;
-  width: 100%;
+  width:100%;
 }
-
 
 .container {
   position:relative;
   text-align: center;
-  width:100%;
+  width: 100%;
   height:auto;
 }
 
 .baku {
-  background-image: url(css-exercise-four/images/baku.jpg);
-  width:100%;
+  background-image: url(images/baku.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
 }
 
 .london {
-  background-image: url(css-exercise-four/images/london.png);
-  width:100%;
+  background-image: url(images/london.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  width: 100%;
 }
 
 .madrid {
-    background-image: url(css-exercise-four/images/madrid.jpg);
-    width:100%;
-
+  background-image: url(images/madrid.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  width: 100%;
 }
 .rome {
-    background-image: url(css-exercise-four/images/rome.jpg);
-    width:100%;
+  background-image: url(images/rome.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+}
+
+.preview {
+  height: auto;
 }
 
 /* code for tablet size two-column */
 @media screen and (min-width: 575px){
-   div {
+  div {
     margin: 1%;
     width: 48%;
   }
 }
 
-
 /* code for laptop four-column */
 @media screen and (min-width: 991px){
-   div {
-    margin: 1%;
-    width: 24.5%;
+  div {
+    margin: 0%;
+    width: 25%;
   }
 }
